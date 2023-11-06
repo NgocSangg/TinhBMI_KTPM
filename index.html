@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-5">
+      <div class="card">
+        <div class="card-header">
+          <b>Tính chỉ số BMI</b>
+        </div>
+        <div class="card-body">
+          <label>Họ Và Tên</label>
+          <input id="input_1" class="form-control mt-2 mb-2" type="text">
+          <label>Chiều Cao(m)</label>
+          <input id="input_2" class="form-control mt-2 mb-2" type="number">
+          <label>Cân Nặng(kg)</label>
+          <input id="input_3" class="form-control mt-2 mb-2" type="number">
+        </div>
+        <div class="card-footer">
+          <!-- <button onclick="tinhBMI()" class="btn btn-danger">Tính BMI</button> -->
+          <!-- <button onclick="tinhBMI()" class="btn btn-primary"> Hiển thị thông tin </button> -->
+          <button onclick="tinhBMI()" class="btn btn-primary">Tính BMI</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="card">
+        <div class="card-header">
+          <b>Thông tin BMI</b>
+        </div>
+        <div class="card-body">
+          <!-- <div class="row"> -->
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Họ Và Tên </th>
+
+                  <th >Số BMI</th>
+
+                  <th>Tình Trạng</th>
+
+                </tr>
+
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="HoTen" scope="col"></th>
+                  <th id="BMI">
+                    <input type="number">
+                  </th>
+                  <th id="TinhTrang"></th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="col">
+                      <img style="height: 300PX; width: 300px;" id="Hinh_anh"
+                        src="" alt="">
+                    </div>
+                  </th>
+                </tr>
+
+              </tbody>
+
+            </table>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+<script src="BMI.js"></script>
+
+</html>
